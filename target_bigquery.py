@@ -191,7 +191,7 @@ def persist_lines_job(project_id, dataset_id, lines=None, truncate=False, valida
     #     if not errors[table]:
     #         print('Loaded {} row(s) into {}:{}'.format(rows[table], dataset_id, table), tables[table].path)
     #     else:
-    #         print('Errors:', errors[table], sep=" ")
+    #         print('Errors:', errors[table])
 
     return state
 
@@ -261,7 +261,7 @@ def persist_lines_stream(project_id, dataset_id, lines=None, validate_records=Tr
             logging.info('Loaded {} row(s) into {}:{}'.format(rows[table], dataset_id, table, tables[table].path))
             emit_state(state)
         else:
-            logging.error('Errors:', errors[table], sep=" ")
+            logging.error('Errors:', errors[table])
 
     return state
 
