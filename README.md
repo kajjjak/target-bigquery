@@ -8,6 +8,7 @@ A [Singer](https://singer.io) target that writes data to Google BigQuery.
 
 ### Step 1: Activate the Google BigQuery API
 
+Follow steps here https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries or 
  (originally found in the [Google API docs](https://googlecloudplatform.github.io/google-cloud-python/latest/bigquery/usage.html))
  
  1. Use [this wizard](https://console.developers.google.com/start/api?id=bigquery-json.googleapis.com) to create or select a project in the Google Developers Console and activate the BigQuery API. Click Continue, then Go to credentials.
