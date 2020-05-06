@@ -66,7 +66,7 @@ def define_schema(field, name):
                 field = types
             
     if isinstance(field['type'], list):
-        if field['type'][0] == "null":
+        if "null" in field['type']:
             schema_mode = 'NULLABLE'
         else:
             schema_mode = 'required'
